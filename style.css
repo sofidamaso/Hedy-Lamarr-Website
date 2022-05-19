@@ -1,24 +1,24 @@
 * {
     margin: 0;
+    padding: 0;
     font-family: 'Signika';
     font-style: normal;
     font-size: 16px;
 }
 li{
     display: inline-block;
-    width: 19.80%;
-    height: 6.9%;
     text-align: center;
-    vertical-align: middle;
+    align-self: center;
 }
-ul{
-    margin: 0;
-    padding: 0;
+.base{
+    width: 100%;
+    display: grid;
+    justify-content: center;
 }
 nav{
     background-color: #F05879;
     font-weight: 600;
-    height: 6.9%;
+    /*height: 6.9%;*/
     width: 100%;
     position: sticky;
     top: 0;
@@ -33,17 +33,39 @@ a{
     vertical-align: middle;
     text-decoration: none;
     background-color: #F590A6;
-    line-height: 94px;
-
 }
 .active{
     text-align: center;
     vertical-align: middle;
     text-decoration: none;
     background-color: #F590A6;
-    line-height: 94px;
-    width: 19.82%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
 }
+ul{
+    display: grid;
+    grid-template-areas: "home personaggio logo invenzione gallery";
+    align-items: stretch;
+    justify-items: center;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+#link1{
+    grid-area: home;
+}
+#link2{
+    grid-area: personaggio;
+}
+#link3{
+    grid-area: logo;
+}
+#link4{
+    grid-area: invenzione;
+}
+#link5{
+    grid-area: gallery;
+}
+
 h1, h2, h3{
     font-family: 'Aclonica';
     font-style: normal;
@@ -73,12 +95,16 @@ h3{
     color: #F05879;
     margin-top: 0.38%;
 }
-#hero_image{
-    display: block;
-    margin: 0 auto;
+#container_image{
+    display: grid;
+    grid-template-areas: ". image .";
     margin-top: 4.65%;
-    /*width: 73.88%;
-    height: 30.7%;*/
+    justify-self: center;
+}
+#hero_image{
+    grid-area: image;
+    justify-self: center;
+    width: 73.88vw;
 }
 .sfondo_light{
     background-color: #FFFBF8;
@@ -92,12 +118,14 @@ p.body_default{
 .body_strong{
     font-weight: 600;
 }
-.scopri{
+#container_scopri{
     margin-top: 3.15%;
-    margin-left: 35.625%;
-    margin-right: 35.625%;
-    width: 414px;
-
+    display: grid;
+    grid-template-areas: ". scopri .";
+}
+#container_scopri p{
+    grid-area: scopri;
+    justify-self: center;
 }
 .cta_primary{
     display: flex;
@@ -107,8 +135,11 @@ p.body_default{
     gap: 20px;
     width: 197px;
     height: 50px;
-    background: #F05879;
+    background-color: #F05879;
     border-radius: 8px;
+}
+.cta_primary:hover{
+    background-color: #F590A6;
 }
 #buttons{
     display: flex;
