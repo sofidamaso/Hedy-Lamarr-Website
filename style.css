@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -18,10 +21,10 @@ li{
 nav{
     background-color: #F05879;
     font-weight: 600;
-    /*height: 6.9%;*/
     width: 100%;
     position: sticky;
     top: 0;
+    text-transform: uppercase;
 }
 a{
     vertical-align: middle;
@@ -94,6 +97,7 @@ h3{
     text-align: center;
     color: #F05879;
     margin-top: 0.38%;
+    text-transform: uppercase;
 }
 #container_image{
     display: grid;
@@ -169,6 +173,7 @@ footer{
 }
 #footer_bottom{
     padding-top: 1.54%;
+    text-decoration: underline;
 }
 .rect{
     display: block;
