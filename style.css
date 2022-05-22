@@ -7,7 +7,8 @@
     font-family: 'Signika';
     font-style: normal;
     /*font-size: 16px;*/
-    font-size: 1.235vh;
+    /*font-size: 1.235vh;*/
+    font-size: 1.12vw;
 }
 li{
     display: inline-block;
@@ -33,6 +34,8 @@ nav a{
 a{
     text-decoration: none;
     color: #FFFBF8;
+    /*font-size: 16px;*/
+    font-size: 1.12vw;
 }
 .base:hover{
     text-align: center;
@@ -64,26 +67,23 @@ h1, h2, h3{
     text-align: center;
 }
 h1{
-    /*font-size: 68px;*/
     line-height: 77px;
     color: #F05879;
 }
 h2{
-    /*font-size: 40px;*/
     line-height: 45px;
     color: #FA8282;
 }
 h3{
-    /*font-size: 24px;*/
     line-height: 27px;
     color: #674F54;
 }
-#subtitle{
+#subtitle {
     line-height: 20px;
     font-weight: 400;
     text-align: center;
     color: #F05879;
-    margin-top: 0.38%;
+    margin-top: 0.42vw;
     text-transform: uppercase;
 }
 #container_image{
