@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;600&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +6,7 @@
     /*font-size: 16px;*/
     /*font-size: 1.235vh;*/
     font-size: 1.12vw;
+    font-weight: 400;
 }
 li{
     display: inline-block;
@@ -142,6 +140,7 @@ h3{
     gap: 1.38%;
     margin-top: 2.15%;
 }
+/*
 footer{
     background-color: #220D11;
     margin-top: 7.7%;
@@ -161,12 +160,50 @@ footer{
     padding-top: 3.9%;
     padding-bottom: 3.9%;
 }
-hr{
-    border: 1px solid #FFFBF8;
-}
+
 #footer_bottom{
     padding-top: 1.54%;
     text-decoration: underline;
+} */
+hr{
+    border: none;
+    border-bottom: 1px solid #FFFBF8;
+    align-self: center;
+
+}
+footer{
+    display: grid;
+    grid-template-areas: "riga1 ." "riga2 riga2" "riga3 riga3";
+    grid-template-columns: 44.45% 44.45%;
+    background-color: #220D11;
+    margin-top: 7.7%;
+    color: #FFFBF8;
+    height: 15.43vh;
+    justify-content: center;
+}
+#container_icons{
+    grid-area: riga1;
+    align-self: end;
+}
+#container_icons a{
+    padding-right: 1.54%;
+}
+#container_links{
+    width: 100%;
+}
+#container_links a{
+    justify-self: start;
+    padding-right: 2.29vw;
+    text-decoration: underline;
+}
+#copyright{
+    justify-self: end;
+}
+#line{
+    grid-area: riga2;
+}
+#container_links{
+    grid-area: riga3;
 }
 .rect{
     display: block;
