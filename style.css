@@ -57,6 +57,21 @@ ul{
     justify-items: center;
     grid-template-columns: 20% 20% 20% 20% 20%;
 }
+#link1{
+    grid-area: home;
+}
+#link2{
+    grid-area: personaggio;
+}
+#link3{
+    grid-area: logo;
+}
+#link4{
+    grid-area: invenzione;
+}
+#link5{
+    grid-area: gallery;
+}
 h1, h2, h3{
     font-family: 'Aclonica';
     font-style: normal;
@@ -65,14 +80,20 @@ h1, h2, h3{
     text-align: center;
 }
 h1{
+    /*font-size: 68px;*/
+    font-size: 4.72vw;
     line-height: 77px;
     color: #F05879;
 }
 h2{
+    /*font-size: 40px;*/
+    font-size: 2.8vw;
     line-height: 45px;
     color: #FA8282;
 }
 h3{
+    /*font-size: 24px;*/
+    font-size: 1.57vw;
     line-height: 27px;
     color: #674F54;
 }
@@ -140,37 +161,6 @@ h3{
     gap: 1.38%;
     margin-top: 2.15%;
 }
-/*
-footer{
-    background-color: #220D11;
-    margin-top: 7.7%;
-    color: #FFFBF8;
-    font-weight: 400;
-    line-height: 150%;
-}
-.contenuto_footer a{
-    margin-right: 1.38%;
-}
-#icons{
-    padding-bottom: 1.54%;
-}
-.contenuto_footer{
-    margin-left: 5.56%;
-    margin-right: 5.56%;
-    padding-top: 3.9%;
-    padding-bottom: 3.9%;
-}
-
-#footer_bottom{
-    padding-top: 1.54%;
-    text-decoration: underline;
-} */
-hr{
-    border: none;
-    border-bottom: 1px solid #FFFBF8;
-    align-self: center;
-
-}
 footer{
     display: grid;
     grid-template-areas: "riga1 ." "riga2 riga2" "riga3 riga3";
@@ -184,12 +174,19 @@ footer{
 #container_icons{
     grid-area: riga1;
     align-self: end;
+    /*padding-bottom: 1.54vh;*/
 }
 #container_icons a{
-    padding-right: 1.54%;
+    padding-right: 1.388vw;
+}
+hr{
+    border: none;
+    border-bottom: 1px solid #FFFBF8;
+    align-self: center;
 }
 #container_links{
     width: 100%;
+    /*padding-top: 1.54vh;*/
 }
 #container_links a{
     justify-self: start;
