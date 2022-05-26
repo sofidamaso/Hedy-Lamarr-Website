@@ -21,7 +21,6 @@ li{
 }
 nav{
     background-color: #F05879;
-    font-weight: 600;
     width: 100%;
     position: sticky;
     top: 0;
@@ -29,6 +28,7 @@ nav{
 }
 nav a{
     vertical-align: middle;
+    font-weight: 600;
 }
 a{
     text-decoration: none;
@@ -150,7 +150,7 @@ h3{
     height: 3.5vw;
     background-color: #F05879;
     border-radius: 8px;
-    font-weight: 600;
+
     text-transform: uppercase;
 }
 .cta_primary:hover{
@@ -162,6 +162,9 @@ h3{
     justify-content: center;
     gap: 1.38%;
     margin-top: 2.15%;
+}
+.cta_primary a {
+    font-weight: 600;
 }
 footer{
     display: grid;
