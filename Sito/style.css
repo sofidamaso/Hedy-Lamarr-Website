@@ -12,11 +12,13 @@ li{
     display: inline-block;
     text-align: center;
     align-self: center;
+    height: 100%;
 }
 .base{
     width: 100%;
     display: grid;
     justify-content: center;
+    align-content: center;
 }
 nav{
     background-color: #F05879;
@@ -48,7 +50,7 @@ a{
     background-color: #F590A6;
     width: 100%;
     display: grid;
-    justify-content: center;
+    align-content: center;
 }
 ul{
     display: grid;
@@ -93,7 +95,7 @@ h2{
 }
 h3{
     /*font-size: 24px;*/
-    font-size: 1.57vw;
+    font-size: 1.7vw;
     line-height: 27px;
     color: #674F54;
 }
@@ -186,7 +188,6 @@ hr{
 }
 #container_links{
     width: 100%;
-    /*padding-top: 1.54vh;*/
 }
 #container_links a{
     justify-self: start;
