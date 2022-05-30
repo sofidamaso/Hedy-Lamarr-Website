@@ -96,7 +96,7 @@ h3{
     /*font-size: 24px;*/
     font-size: 1.7vw;
     line-height: 27px;
-    color: #674F54;
+    color: #FFA959;
 }
 #subtitle {
     line-height: 20px;
@@ -171,7 +171,7 @@ footer{
     grid-template-areas: "riga1 ." "riga2 riga2" "riga3 riga3";
     grid-template-columns: 44.45% 44.45%;
     background-color: #220D11;
-    margin-top: 7.7%;
+    margin-top: 7.1%;
     color: #FFFBF8;
     /*height: 200px;*/
     height: 13.9vw;
@@ -218,4 +218,34 @@ hr{
 }
 #copyright{
     float: right;
+}
+.card_curiosita{
+    display: grid;
+    grid-template-areas: "image_left gap text_right" "text_bottom text_bottom text_bottom" "image_bottom image_bottom image_bottom";
+    /*grid-template-columns: 30.13% 43.75%;*/
+    grid-template-columns: auto 8.9% 62%;
+    row-gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    margin-left: 13%;
+    margin-right: 13%;
+}
+#img_left{
+    grid-area: image_left;
+    align-self: stretch;
+}
+#text_right{
+    grid-area: text_right;
+}
+#text_bottom{
+    grid-area: text_bottom;
+}
+#img_bottom{
+    grid-area: image_bottom;
+    justify-self: center;
+    /*padding-top: 3.39vw;*/
+    padding-top: 1.3vw;
+}
+.card_text_right{
+    padding-top: 2vw;
 }
