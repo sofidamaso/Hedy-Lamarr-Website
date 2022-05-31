@@ -13,18 +13,14 @@ li{
     align-self: center;
     height: 100%;
 }
-.base{
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-}
 nav{
-    background-color: #F05879;
     width: 100%;
+    text-transform: uppercase;
+}
+nav.primary{
     position: sticky;
     top: 0;
-    text-transform: uppercase;
+    background-color: #F05879;
 }
 nav a{
     vertical-align: middle;
@@ -36,13 +32,23 @@ a{
     /*font-size: 16px;*/
     font-size: 1.12vw;
 }
-.base:hover{
+.logo{
+    width: 6.25vw;
+    height:  6.25vw;
+}
+.base_primary{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.base_primary:hover{
     text-align: center;
     vertical-align: middle;
     text-decoration: none;
     background-color: #F590A6;
 }
-.active{
+.active_primary{
     text-align: center;
     vertical-align: middle;
     text-decoration: none;
@@ -51,12 +57,13 @@ a{
     display: grid;
     align-content: center;
 }
-ul{
+ul.primary{
     display: grid;
     grid-template-areas: "home personaggio logo invenzione gallery";
     align-items: stretch;
     justify-items: center;
     grid-template-columns: 20% 20% 20% 20% 20%;
+    height:  6.25vw;
 }
 #link1{
     grid-area: home;
@@ -73,6 +80,53 @@ ul{
 #link5{
     grid-area: gallery;
 }
+
+.base_secondary{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: #FA8282;
+}
+nav.secondary{
+    width: 100%;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    /*background-color: #FA8282;*/
+}
+nav.secondary a{
+    vertical-align: middle;
+    font-weight: 600;
+}
+.base_secondary:hover{
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: #FCA8A8;
+}
+ul.secondary{
+    display: grid;
+    grid-template-areas: "biografia cosa_dicono aiuti_premi fonti";
+    align-items: stretch;
+    justify-items: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    height: 6.25vw;
+}
+#link6{
+    grid-area: biografia;
+}
+#link7{
+    grid-area: cosa_dicono;
+}
+#link8{
+    grid-area: aiuti_premi;
+}
+#link9{
+    grid-area: fonti;
+}
+
+
 h1, h2, h3{
     font-family: 'Aclonica';
     font-style: normal;
