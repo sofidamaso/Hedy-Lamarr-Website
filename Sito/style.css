@@ -262,12 +262,18 @@ hr{
 .rect{
     display: block;
     margin: 0 auto;
+    width: 43.75vw;
+    height: 20.9vw;
 }
-.square{
+.square_group{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 1.233vh;
+}
+.square{
+    width: 13.611vw;
+    height: 13.611vw;
 }
 #copyright{
     float: right;
