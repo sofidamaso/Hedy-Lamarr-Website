@@ -280,9 +280,8 @@ hr{
 }
 .card{
     display: grid;
-    /*grid-template-areas: "image_left gap text_right" "text_bottom text_bottom text_bottom" "image_bottom image_bottom image_bottom";*/
     grid-template-areas: "image_left text_right" "text_bottom text_bottom" "image_bottom image_bottom";
-    /*grid-template-columns: 30.13% 43.75%;   62 */
+    /*grid-template-columns: 30.13% 43.75%;*/
     grid-template-columns: auto 62%;
     column-gap: 8.9vw;
     row-gap: 2vw;
