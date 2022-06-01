@@ -7,6 +7,22 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;600&display=swap');
+        h2{
+            padding-bottom: 4.9vw;
+            padding-top: 4.9vw;
+        }
+        .card{
+            padding-top: 3.125vw;
+        }
+        .text_bottom{
+            padding-bottom: 1.11vw;
+        }
+        #biografia{
+            padding-left: 18vw;
+        }
+        #cosa_dicono{
+            padding-left: 15vw;
+        }
     </style>
 </head>
 <body>
@@ -24,8 +40,8 @@
 <!-- navbar secondaria -->
 <nav class="secondary">
     <ul  class="secondary">
-        <li class="base_secondary" id="link6" onclick="changeColor()" ><a href="" >Biografia</a></li>
-        <li class="base_secondary" id="link7"><a href="">Cosa dicono di lei</a></li>
+        <li class="base_secondary" id="link6"><a href="#biografia" >Biografia</a></li>
+        <li class="base_secondary" id="link7"><a href="#cosa_dicono">Cosa dicono di lei</a></li>
         <li class="base_secondary" id="link8"><a href="">Aiuti e Premi</a></li>
         <li class="base_secondary" id="link9"><a href="">Fonti storiche</a></li>
     </ul>
@@ -39,9 +55,44 @@
         }
 </script>-->
 
-
 <div class="sfondo_light">
-<p style="padding-top: 1.38vw; text-align: center">Pagina da sviluppare</p>
+<h2>Il personaggio</h2>
+
+<h3 id="biografia" class="section_title">Biografia</h3>
+<div class="container_card">
+        <div class="card">
+            <img src="Images/305x305.png" alt="Hedy Lamarr primo piano" class="img_left">
+            <div class="text_right">
+                <p class="body_default">
+                    Hedy Lamarr, pseudonimo di <span class="body_strong">Hedwig Eva Maria Kiesler</span> (Vienna, 9 novembre 1914 – Altamonte Springs, 19 gennaio 2000), è stata un'attrice e inventrice austriaca naturalizzata statunitense.<br>
+                    Dopo l'esordio nel cinema austriaco, e preceduta dallo scandalo del film cecoslovacco Estasi (1933), in cui prima attrice protagonista nella storia del cinema, recitò completamente nuda una scena. Successivamente a diciotto anni andò a Hollywood per allontanarsi dalla Germania nazista e in quegli anni divenne nota con il nome Hedy Lamarr, esso venne scelto dal produttore <span class="body_strong">Louis B. Mayer</span> che inizialmente non vedeva di buon occhio l’attrice a causa del suo nudo nel film Estasi, poiché rifletteva su ciò che il pubblico avrebbe pensato di una attrice che mette in mostra la sua intimità nonostante la sua bellezza. Egli decise comunque di investire su di lei con uno pseudonimo che rendeva omaggio all’attrice Barbara La Marr, la quale era stata definita «la donna più bella del mondo».
+
+                </p>
+            </div>
+            <p class="body_default text_bottom">
+                Divenuta una delle dive del cinema statunitense, Hedy Lamarr fu in genere relegata a ruoli di poca sostanza, trasformandosi in un'icona di bellezza esotica e straniera, europea e anche orientale. L’attrice girò circa venticinque film in altrettanti anni, con i maggiori registi e a fianco dei più celebrati attori dell'epoca, inoltre per la sua notevole bellezza è stata spesso definita la donna più bella del mondo e del cinema.<br>
+                Solo agli inizi del ventunesimo secolo si è conosciuto il ruolo di Lamarr, ex studentessa di ingegneria a Vienna, come inventrice; desiderosa di contribuire alla lotta contro il nazismo non solo partecipando alla vendita di obbligazioni del governo federale americano (come fecero altre star hollywoodiane), sviluppò col compositore <span class="body_strong">George Antheil</span> un sistema di guida a distanza per siluri.
+            </p>
+        </div>
+    </div>
+
+<h3 id="cosa_dicono" class="section_title">Cosa dicono di lei</h3>
+<div class="container_card">
+        <div class="card">
+            <img src="Images/305x305-4.png" alt="Nudo del film Estasi" class="img_left">
+            <div class="text_right">
+                <p class="body_default">
+                    Hedy Lamarr in <span class="body_strong">Estasi</span> fu la prima attrice protagonista a recitare <span class="body_strong">totalmente nuda</span> in un film, anche se in questo caso di fronte è solo in topless. Nel luglio 1932 l’attrice si recò in Boemia perché scelta come protagonista dal regista cecoslovacco Gustav Machatý, già noto per il lungometraggio Erotikon (1929). La sua partecipazione al film ne condizionò la vita fino alla morte. A 19 anni Hedy imparò in poche settimane la lingua ceca perché la pellicola era girata in tedesco, ceco e francese. In ogni caso, malgrado si trattasse di un film sonoro, le battute di dialogo si riducevano a una quindicina di frasi e lei era doppiata in ceco.
+                    L'attrice sostenne di essere stata quasi costretta a recitare la scena del bagno nel fiume perché il regista le aveva ricordato l'impegno contrattuale e di non sapere che la sceneggiatura comprendesse il nudo. Le testimonianze della troupe invece rivelano che la giovane Hedy Kiesler sapeva cosa aspettarsi: «In quanto protagonista del film, sapeva che doveva apparire nuda in alcune scene. Non protestò o strillò durante le riprese, e certo nessuno le tolse i vestiti».
+
+                </p>
+            </div>
+            <p class="body_default text_bottom">
+                Estasi fu pubblicizzato con forti allusioni pornografiche, inoltre l'aspetto più evidente di <span class="body_strong">trasgressione</span> rispetto alla moralità dell'epoca è il fatto che la protagonista femminile interpretata da Hedy Lamarr, Eva, non viene punita per avere abbandonato il marito e continua a vivere senza colpe la sua sessualità.
+                In Germania il film in un primo tempo fu addirittura proibito, ma nel 1935 uscì nuovamente con il titolo Symphonie der Liebe, sottoposto a pesanti censure.
+            </p>
+        </div>
+</div>
 
     <!-- footer -->
     <footer>
