@@ -190,7 +190,7 @@ h3{
     grid-area: scopri;
     justify-self: center;
 }
-.cta_primary{
+.cta{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -201,13 +201,8 @@ h3{
     width: 13.68vw;
     /*height: 50px;*/
     height: 3.5vw;
-    background-color: #F05879;
     border-radius: 8px;
-
     text-transform: uppercase;
-}
-.cta_primary:hover{
-    background-color: #F590A6;
 }
 #buttons{
     display: flex;
@@ -216,7 +211,7 @@ h3{
     gap: 1.38%;
     margin-top: 2.15%;
 }
-.cta_primary a {
+.cta a {
     font-weight: 600;
 }
 footer{
@@ -311,7 +306,7 @@ hr{
     height: 21.62vw;
 }
 .card_text_right{
-    padding-top: 1vw;
+    padding-top: 1.5vw;
 }
 .container_card{
     background-color: #FFDDBE;
@@ -321,4 +316,42 @@ hr{
 .section_title{
     text-align: left;
     padding-bottom: 1.73vw;
+}
+.card_withbutton{
+    display: grid;
+    grid-template-areas: "image_left text_right" ". button" ;
+    /*grid-template-columns: 30.13% 43.75%;*/
+    grid-template-columns: auto 62%;
+    column-gap: 8.9vw;
+    row-gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    margin-left: 13%;
+    margin-right: 13%;
+}
+.button_card{
+    grid-area: button;
+    margin-left: 15.3vw;
+}
+#container_fonti{
+    margin-top: 3.15%;
+    display: grid;
+    grid-template-areas: ". text_fonti ." ;
+    grid-template-columns: 13% auto 13%;
+}
+#container_fonti p{
+    grid-area: text_fonti;
+    justify-self: center;
+}
+#tertiary{
+    background-color: #FFA959;
+}
+#tertiary:hover{
+    background-color: #FFBE84;
+}
+.secondary{
+    background-color: #FA8282;
+}
+.secondary:hover{
+    background-color: #FCA8A8;
 }
