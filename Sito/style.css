@@ -164,6 +164,7 @@ h3{
     grid-area: image;
     justify-self: center;
     width: 73.88vw;
+    height: 27.64vw;
 }
 .sfondo_light{
     background-color: #FFFBF8;
@@ -222,6 +223,10 @@ footer{
 }
 #container_icons a{
     padding-right: 1.388vw;
+}
+.icon{
+    width: 1.666vw;
+    height: 1.666vw;
 }
 hr{
     border: none;
