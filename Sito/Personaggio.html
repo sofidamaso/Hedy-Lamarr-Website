@@ -20,17 +20,25 @@
         .text_bottom{
             padding-bottom: 1.11vw;
         }
-        #biografia{
+        #biografia_title{
             padding-left: 18vw;
         }
-        #cosa_dicono{
+        #cosa_dicono_title{
             padding-left: 15vw;
         }
-        #aiuti_premi{
+        #aiuti_premi_title{
             padding-left: 16vw;
         }
         #buttons{
             margin-top: 2.78vw;
+        }
+        /* per far si che le anchor della navbar secondaria scrollino correttamente*/
+        h3{
+            position:relative;
+        }
+        h3 span{
+            position:absolute;
+            top:-14vw;
         }
     </style>
 </head>
@@ -67,7 +75,7 @@
 <div class="sfondo_light">
 <h2>Il personaggio</h2>
 
-<h3 id="biografia" class="section_title">Biografia</h3>
+<h3 class="section_title" id="biografia_title"><span id="biografia"></span>Biografia</h3>
 <div class="container_card">
         <div class="card">
             <img src="Images/305x305.png" alt="Hedy Lamarr primo piano" class="img_left">
@@ -85,7 +93,7 @@
         </div>
     </div>
 
-<h3 id="cosa_dicono" class="section_title">Cosa dicono di lei</h3>
+<h3 class="section_title" id="cosa_dicono_title"><span id="cosa_dicono"></span>Cosa dicono di lei</h3>
 <div class="container_card">
         <div class="card">
             <img src="Images/305x305-4.png" alt="Nudo del film Estasi" class="img_left">
@@ -93,7 +101,6 @@
                 <p class="body_default">
                     Hedy Lamarr in <span class="body_strong">Estasi</span> fu la prima attrice protagonista a recitare <span class="body_strong">totalmente nuda</span> in un film, anche se in questo caso di fronte è solo in topless. Nel luglio 1932 l’attrice si recò in Boemia perché scelta come protagonista dal regista cecoslovacco Gustav Machatý, già noto per il lungometraggio Erotikon (1929). La sua partecipazione al film ne condizionò la vita fino alla morte. A 19 anni Hedy imparò in poche settimane la lingua ceca perché la pellicola era girata in tedesco, ceco e francese. In ogni caso, malgrado si trattasse di un film sonoro, le battute di dialogo si riducevano a una quindicina di frasi e lei era doppiata in ceco.
                     L'attrice sostenne di essere stata quasi costretta a recitare la scena del bagno nel fiume perché il regista le aveva ricordato l'impegno contrattuale e di non sapere che la sceneggiatura comprendesse il nudo. Le testimonianze della troupe invece rivelano che la giovane Hedy Kiesler sapeva cosa aspettarsi: «In quanto protagonista del film, sapeva che doveva apparire nuda in alcune scene. Non protestò o strillò durante le riprese, e certo nessuno le tolse i vestiti».
-
                 </p>
             </div>
             <p class="body_default text_bottom">
@@ -103,7 +110,7 @@
         </div>
 </div>
 
-<h3 id="aiuti_premi" class="section_title">Aiuti e premi</h3>
+<h3 class="section_title" id="aiuti_premi_title"><span id="aiuti_premi"></span>Aiuti e premi</h3>
 <div class="container_card">
         <div class="card_withbutton">
             <img src="Images/305x305-2.png" alt="George Antheil" class="img_left">

@@ -3,7 +3,6 @@
     padding: 0;
     font-family: 'Signika';
     font-style: normal;
-    /*font-size: 16px;*/
     font-size: 1.12vw;
     font-weight: 400;
 }
@@ -16,6 +15,7 @@ li{
 nav{
     width: 100%;
     text-transform: uppercase;
+    z-index: 1;
 }
 nav.primary{
     position: sticky;
@@ -29,7 +29,6 @@ nav a{
 a{
     text-decoration: none;
     color: #FFFBF8;
-    /*font-size: 16px;*/
     font-size: 1.12vw;
 }
 .logo{
@@ -92,7 +91,6 @@ nav.secondary{
     text-transform: uppercase;
     position: sticky;
     top: 6.58vw;
-    /*background-color: #FA8282;*/
 }
 nav.secondary a{
     vertical-align: middle;
@@ -134,19 +132,16 @@ h1, h2, h3{
     text-align: center;
 }
 h1{
-    /*font-size: 68px;*/
     font-size: 4.72vw;
     line-height: 77px;
     color: #F05879;
 }
 h2{
-    /*font-size: 40px;*/
     font-size: 2.8vw;
     line-height: 45px;
     color: #FA8282;
 }
 h3{
-    /*font-size: 24px;*/
     font-size: 1.7vw;
     line-height: 27px;
     color: #FFA959;
@@ -195,11 +190,8 @@ h3{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /*gap: 20px;
-    width: 197px;*/
     gap: 1.38vw;
     width: 13.68vw;
-    /*height: 50px;*/
     height: 3.5vw;
     border-radius: 8px;
     text-transform: uppercase;
@@ -221,7 +213,6 @@ footer{
     background-color: #220D11;
     margin-top: 7.1%;
     color: #FFFBF8;
-    /*height: 200px;*/
     height: 13.9vw;
     justify-content: center;
 }
@@ -287,7 +278,6 @@ hr{
 }
 .img_left{
     grid-area: image_left;
-    /*align-self: stretch;*/
     width: 21.19vw;
     height: 21.19vw;
 }
@@ -300,7 +290,6 @@ hr{
 #img_bottom{
     grid-area: image_bottom;
     justify-self: center;
-    /*padding-top: 3.39vw;*/
     padding-top: 1.3vw;
     width: 43.75vw;
     height: 21.62vw;
