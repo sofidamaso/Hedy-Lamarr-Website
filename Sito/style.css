@@ -122,8 +122,6 @@ ul.secondary{
 #link9{
     grid-area: fonti;
 }
-
-
 h1, h2, h3{
     font-family: 'Aclonica';
     font-style: normal;
@@ -170,7 +168,6 @@ h3{
     background-color: #FFFBF8;
 }
 .body_default{
-    font-weight: 400;
     line-height: 150%;
     color: #674F54;
 }
@@ -269,17 +266,51 @@ hr{
 #copyright{
     float: right;
 }
-.card{
+#card_invenzione{
     display: grid;
-    grid-template-areas: "image_left text_right" "text_bottom text_bottom" "image_bottom image_bottom";
-    /*grid-template-columns: 30.13% 43.75%;*/
-    grid-template-columns: auto 62%;
-    column-gap: 8.9vw;
-    row-gap: 2vw;
+    grid-template-columns: 11.66% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 11.66%;
+    grid-template-areas: ". image_left image_left image_left . text_right text_right text_right text_right text_right text_right ."
+                          ". text_bottom text_bottom text_bottom text_bottom text_bottom text_bottom text_bottom text_bottom text_bottom text_bottom .";
+    column-gap: 1.38vw;
+    row-gap: 2.43vw;
     justify-content: center;
     align-items: center;
-    margin-left: 13%;
-    margin-right: 13%;
+}
+#card_image_bottom{
+    display: grid;
+    grid-template-columns: 11.66% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 11.66%;
+    grid-template-areas: ". . . image_bottom image_bottom image_bottom image_bottom image_bottom image_bottom . . .";
+    column-gap: 1.38vw;
+    padding-top: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+.card_personaggio{
+    display: grid;
+    grid-template-columns: 11.66% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 11.66%;
+    grid-template-areas: ". image_left image_left image_left . text_right text_right text_right text_right text_right text_right ."
+                          ". text_bottom text_bottom text_bottom text_bottom text_bottom text_bottom text_bottom text_bottom text_bottom text_bottom .";
+    column-gap: 1.38vw;
+    row-gap: 2.77vw;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3.125vw;
+    padding-top: 3.125vw;
+}
+#card_withbutton{
+    display: grid;
+    grid-template-columns: 11.66% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 11.66%;
+    grid-template-areas: ". image_left image_left image_left . text_right text_right text_right text_right text_right text_right ."
+                         ". . . . . . . button button . . .";
+    column-gap: 1.38vw;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3.125vw;
+    padding-top: 3.125vw;
+}
+#button_card{
+    grid-area: button;
+    padding-top: 1vw;
 }
 .img_left{
     grid-area: image_left;
@@ -294,8 +325,6 @@ hr{
 }
 #img_bottom{
     grid-area: image_bottom;
-    justify-self: center;
-    padding-top: 1.3vw;
     width: 43.75vw;
     height: 21.62vw;
 }
@@ -311,24 +340,8 @@ hr{
     text-align: left;
     padding-bottom: 1.73vw;
 }
-.card_withbutton{
-    display: grid;
-    grid-template-areas: "image_left text_right" ". button" ;
-    /*grid-template-columns: 30.13% 43.75%;*/
-    grid-template-columns: auto 62%;
-    column-gap: 8.9vw;
-    row-gap: 2vw;
-    justify-content: center;
-    align-items: center;
-    margin-left: 13%;
-    margin-right: 13%;
-}
-.button_card{
-    grid-area: button;
-    margin-left: 15.3vw;
-}
 #container_fonti{
-    margin-top: 3.15%;
+    margin-top: 3.47%;
     display: grid;
     grid-template-areas: ". text_fonti ." ;
     grid-template-columns: 13% auto 13%;
