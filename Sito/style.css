@@ -279,7 +279,7 @@ hr{
 #card_image_bottom{
     display: grid;
     grid-template-columns: 11.66% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 6.11% 11.66%;
-    grid-template-areas: ". . . image_bottom image_bottom image_bottom image_bottom image_bottom image_bottom . . .";
+    grid-template-areas: ". image_bottom image_bottom image_bottom image_bottom image_bottom image_bottom image_bottom image_bottom image_bottom image_bottom .";
     column-gap: 1.38vw;
     padding-top: 2vw;
     justify-content: center;
@@ -325,8 +325,8 @@ hr{
 }
 #img_bottom{
     grid-area: image_bottom;
-    width: 43.75vw;
-    height: 21.62vw;
+    width: 73.88vw;
+    height: 27.64vw;
 }
 .card_text_right{
     padding-top: 1.5vw;
